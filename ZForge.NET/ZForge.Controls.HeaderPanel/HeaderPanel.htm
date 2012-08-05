@@ -1,0 +1,80 @@
+<!-- Article Starts - DO NOT ADD HTML/BODY START TAGS-->
+
+<!-- Download Links -->
+<ul class=download>
+<li><a href='HeaderPanel/KISControls.zip'>Download source files - 170 Kb</a></li>
+</ul>
+
+<!-- Article image -->
+<p><img src='HeaderPanel/HeaderPanel.png' alt='Sample Image - HeaderPanel.png' height='317' width='466'></p>
+
+<h2>Introduction</h2>
+.NET SDK and some great developers have already implemented panel control(s). What makes my control different is the thing that it is able to dock child controls properly. I tried using similar controls in one of my project and found that the caption header was disappearing the moment i changed the docking style of child control to 'Fill'. This forced me to capture 'Resize' event and then adjust the child control bounds. Six years back I did developed sucn control using VB6 (which is still available for download at <a href='http://vbaccelerator.com/home/Resources/Babbage/Explorer_Bar_Frame/article.asp'>VBAccelerator.com</a>)
+So I decided to redo the same, but this time using C#.
+
+<h2>Control's GUI</h2>
+<center><img src='HeaderPanel/HeaderPanelLayout.png' alt='Control layout' width='515' height='228'></center>
+<center><b>Figure 1</b></center><br>
+<b>Figure 1</b> shows the basic layout for this controls. The area marked with text "Display Area" denots the maximum available space for child control.
+
+<h2>Control Properties</h2>
+The control has following extra properties apart from the base Panel control.
+<ul>
+<li><code>GradientStart</code> : The starting <code>Color</code> for the control's gradient background. The default value is <code>KnownColor.Window</code></li>
+<li><code>GradientEnd</code> : The end <code>Color</code> for the control's gradient background. The default value is <code>KnownColor.Window</code></li>
+<li><code>GradientDirection</code> : The geadient direction as defined by <code>LinearGradientMode</code> enumeration. The default value is <code>LinearGradientMode.Vertical</code>.</li>
+<li><code>BorderStyle</code> : The border style of the control. The default value is <code>Shadow</code>. Available values are:
+<ul>
+<li><code>None</code> - Do not draw the border.</li>
+<li><code>Single</code> - Draws a single pixel color border with specified <code>BorderColor</code>.</li>
+<li><code>Shadow</code> - Draws a single pixel border with specified <code>BorderColor</code> and adds a shadow around it.</li></ul></li>
+</ul>
+<li><code>BorderColor</code> : The <code>Color</code> to be used for drawing the control border. The default value is <code>KnownColor.ActiveCaption</code>.</li>
+<li><code>CaptionText</code> : The text to be displayed in header. The default value is "HeaderPanel".</li>
+<li><code>CaptionTextAlignment</code> : The text alignment for the caption text as defined by <code>StringAlignment</code> enumeration. The default is <code>StringAlignment.Near</code>. Available values are:
+<ul>
+<li><code>Center</code> : Specifies that text is aligned in the center of the layout rectangle.</li>
+<li><code>Far</code> : Specifies that text is aligned far from the origin position of the layout rectangle. In a left-to-right layout, the far position is right. In a right-to-left layout, the far position is left. </li>
+<li><code>Near</code> : Specifies the text be aligned near the layout. In a left-to-right layout, the near position is left. In a right-to-left layout, the near position is right.</li></ul></li>
+<li><code>TextAntialias</code> : A boolean value which determines whether each character in caption header is to be drawn using antialiased glyph bitmap. The default value is "true".</li>
+<li><code>CaptionVisible</code> : A boolean value indicating whether the caption header is visible or not. The default value is "true".</li>
+<li><code>CaptionHeight</code> : The height in pixels of the caption header. The default value is '24' pixels.</li>
+<li><code>CaptionBeginColor</code> : The starting <code>Color</code> for the caption's gradient background. The default value is <code>KnownColor.InActiveCaption</code></li>
+<li><code>CaptionEndColor</code> : The end <code>Color</code> for the caption's gradient background. The default value is <code>KnownColor.ActiveCaption</code></li>
+<li><code>CaptionGradientDirection</code> : The geadient direction as defined by <code>LinearGradientMode</code> enumeration. The default value is <code>LinearGradientMode.Vertical</code>.</li>
+<li><code>PanelIcon</code> : The icon to be displayed in caption header.</li>
+<li><code>PanelIconVisible</code> : The boolean value indicating whether the caption icon is visible or not. The default value is "false".</li>
+</ul>
+
+<h2>Child control docking</h2>
+As I mentioned earlier with similar other controls when the <code>Dock</code> property of the child control was changed to 'Fill' the child control covered the entire client area of the panel control. This was not the behavior I was expecting. To overcome I had multiple choice.
+<ol>
+<li>First one and very obivious was to add a <code>Picturebox</code> control and set it's <code>Dock</code> property to 'Top'. But some how I did not liked this idea.<li>
+<li>The second idea came to my mind was to somehow alter <code>ClientArea</code> of the control, and then capture WM_NC* messages to paint the non client area. It turned out that the <code>ClientRectangle</code> property is readonly and intercepting WM_NC* messages requires significant amout of code. So this was the last choice I reserved to achieve this functionality.</li>
+</ol>
+
+<h2>MSDN Came to Rescue</h2>
+Searching MSDN documentation revelled that every windows control exposes a property called <code>DisplayRectangle</code>. Further digging in documentation, I came to know that the <code>DisplayRectangle</code> property returns the client rectangle of the display area of the control. For the base control class, this is equal to the client rectangle. However, inheriting controls might want to change this if their client area differs from their display area. The display rectangle is the smallest Rectangle that encloses a control and is used to lay out controls.
+
+This was it. The simple solution I was looking for.
+
+<h2>Similar Controls</h2>
+<ul>
+<li><a href='http://www.purecomponents.com'>Nice Panel</a> : Very nice control from Pure Components. Also supports footer.</li>
+<li><a href='http://www.codeproject.com/cs/miscctrl/exdotnet.asp'>Extended .NET Controls</a> : Very nice control from Hooyberghs Johnny.</li>
+<li><a href='http://www.devexpress.com/Products/NET/XtraEditors/editors/PanelGroupControl.xml'>GroupControl</a> : The Group Control provides you with 2 distinct advantages when compared with the standard control: it provides automatic content scrolling and customizable header location.</li>
+</ul>
+
+<h2>Missing Features</h2>
+Here is a brief list of some additional features I would like to incorporate. (All suggestions are welcomed).
+<ol>
+<li>Customizable header location a feature found in GroupControl.</li>
+<li>Customizable shadow width and colors.</li>
+<li>Auto adjust for CaptionHeight based on current font and icon dimensions. </li>
+</ol>
+
+
+<h2>Version History</h2>
+<ol>
+<li>May 26, 2006 : First release.</li>
+</ol>

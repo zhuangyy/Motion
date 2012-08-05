@@ -1,0 +1,121 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9D35859-B4C6-4E07-B3E3-441BC4DA133E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZForge.Update</RootNamespace>
+    <AssemblyName>ZForge.Update</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KeyGenerationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyGenerationForm.Designer.cs">
+      <DependentUpon>KeyGenerationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateMainForm.Designer.cs">
+      <DependentUpon>UpdateMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="KeyGenerationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KeyGenerationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateMainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UpdateMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZForge.Controls.Logs\ZForge.Controls.Logs.csproj">
+      <Project>{996D0F8A-C1BE-4A69-9C3B-56E19E8D38D3}</Project>
+      <Name>ZForge.Controls.Logs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Controls.Net\ZForge.Controls.Net.csproj">
+      <Project>{34B70D66-6A92-457F-A737-2407683957D7}</Project>
+      <Name>ZForge.Controls.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Controls.Update\ZForge.Controls.Update.csproj">
+      <Project>{C661AAC7-A6FE-4C96-831A-5F2210CF999C}</Project>
+      <Name>ZForge.Controls.Update</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Controls.XPTable\ZForge.Controls.XPTable.csproj">
+      <Project>{1ADD2ECB-2B24-4162-8965-3EFAA9BB041E}</Project>
+      <Name>ZForge.Controls.XPTable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Globalization\ZForge.Globalization.csproj">
+      <Project>{22471A06-6828-44F0-965A-5A3CD1D54927}</Project>
+      <Name>ZForge.Globalization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

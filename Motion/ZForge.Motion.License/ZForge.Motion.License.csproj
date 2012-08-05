@@ -1,0 +1,75 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3AD5114D-40CC-4F3A-885C-0182F0399B14}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZForge.Motion.License</RootNamespace>
+    <AssemblyName>ZForge.Motion.License</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release_UK|AnyCPU' ">
+    <OutputPath>bin\Release_UK\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="License.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Configuration\ZForge.Configuration.csproj">
+      <Project>{70009C5E-8CA4-4421-BBD2-4683989764D2}</Project>
+      <Name>ZForge.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Globalization\ZForge.Globalization.csproj">
+      <Project>{DBBBAD4A-05CA-402D-8E50-534312189DF0}</Project>
+      <Name>ZForge.Globalization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.SA\ZForge.SA.Komponent\ZForge.SA.Komponent.csproj">
+      <Project>{D6B9CC2B-A8D2-4C64-9DDC-73D6D7299CB6}</Project>
+      <Name>ZForge.SA.Komponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.Util\ZForge.Motion.Util.csproj">
+      <Project>{B7EF7162-F6CA-4C1C-8612-94DBDACFF0D7}</Project>
+      <Name>ZForge.Motion.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

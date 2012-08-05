@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B46EB15F-7992-4025-B25A-8C8CDA1290E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZForge.Motion.Controls</RootNamespace>
+    <AssemblyName>ZForge.Motion.Controls.CameraBoard</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release_UK|AnyCPU' ">
+    <OutputPath>bin\Release_UK\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release_UK|x86' ">
+    <OutputPath>bin\x86\Release_UK\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Video, Version=1.3.0.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.VFW, Version=1.3.0.0, Culture=neutral, PublicKeyToken=a82f807c999637c8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\AForge.Video.VFW.dll</HintPath>
+    </Reference>
+    <Reference Include="DevAge.Core, Version=4.9.2709.30301, Culture=neutral, PublicKeyToken=faad465d84242dbf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\DevAge.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevAge.Windows.Forms, Version=4.9.2709.30447, Culture=neutral, PublicKeyToken=faad465d84242dbf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\DevAge.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CameraBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CameraBoard.Designer.cs">
+      <DependentUpon>CameraBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CameraBoardEnum.cs">
+    </Compile>
+    <Compile Include="CameraBoardEvent.cs" />
+    <Compile Include="ExtendedLogViewerItem.cs" />
+    <Compile Include="VideoViewTag.cs" />
+    <Compile Include="ExtendedLogViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtendedLogViewer.Designer.cs">
+      <DependentUpon>ExtendedLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedLogViewerTag.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CameraBoard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CameraBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendedLogViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExtendedLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Configuration\ZForge.Configuration.csproj">
+      <Project>{70009C5E-8CA4-4421-BBD2-4683989764D2}</Project>
+      <Name>ZForge.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Controls.Logs\ZForge.Controls.Logs.csproj">
+      <Project>{996D0F8A-C1BE-4A69-9C3B-56E19E8D38D3}</Project>
+      <Name>ZForge.Controls.Logs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Controls.XPTable\ZForge.Controls.XPTable.csproj">
+      <Project>{1ADD2ECB-2B24-4162-8965-3EFAA9BB041E}</Project>
+      <Name>ZForge.Controls.XPTable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Globalization\ZForge.Globalization.csproj">
+      <Project>{DBBBAD4A-05CA-402D-8E50-534312189DF0}</Project>
+      <Name>ZForge.Globalization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.SA\ZForge.SA.Komponent\ZForge.SA.Komponent.csproj">
+      <Project>{D6B9CC2B-A8D2-4C64-9DDC-73D6D7299CB6}</Project>
+      <Name>ZForge.SA.Komponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SourceGrid\SourceGrid.csproj">
+      <Project>{DA47B108-21C8-4293-8D4E-56FFF1ED45A5}</Project>
+      <Name>SourceGrid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.Controls.CameraTree\ZForge.Motion.Controls.CameraTree.csproj">
+      <Project>{14AFA8DB-3ECA-4E51-90B8-297C2E4BB965}</Project>
+      <Name>ZForge.Motion.Controls.CameraTree</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.Controls.CameraView\ZForge.Motion.Controls.CameraView.csproj">
+      <Project>{204F1030-C416-4628-8938-3E5381AEC3AF}</Project>
+      <Name>ZForge.Motion.Controls.CameraView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.Controls\ZForge.Motion.Controls.csproj">
+      <Project>{C9DCB560-4BF3-4328-8BAF-91765B0DCB8A}</Project>
+      <Name>ZForge.Motion.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.Core\ZForge.Motion.Core.csproj">
+      <Project>{05107692-5AAE-4FA1-B542-C8162CB66233}</Project>
+      <Name>ZForge.Motion.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.Util\ZForge.Motion.Util.csproj">
+      <Project>{B7EF7162-F6CA-4C1C-8612-94DBDACFF0D7}</Project>
+      <Name>ZForge.Motion.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears_pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears_run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replace2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replace2_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk_blue_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears_pause_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears_run_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears_stop_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replace2_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk_blue_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears_pause_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears_run_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears_stop_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll_warning_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll_delete_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll_error_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll_information_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index_delete_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disks_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_as_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_yellow_new_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_closed_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_check_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_yellow_new_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_closed_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_check_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_delete_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

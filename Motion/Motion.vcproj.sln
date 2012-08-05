@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZForge.UK.HT", "..\ZForge.NET\ZForge.UK.HT\ZForge.UK.HT.vcproj", "{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release_UK|Any CPU = Release_UK|Any CPU
+		Release_UK|Mixed Platforms = Release_UK|Mixed Platforms
+		Release_UK|Win32 = Release_UK|Win32
+		Release_UK|x86 = Release_UK|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Debug|Win32.Build.0 = Debug|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Debug|x86.ActiveCfg = Debug|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Release_UK|Any CPU.ActiveCfg = Release_UK|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Release_UK|Mixed Platforms.ActiveCfg = Release_UK|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Release_UK|Mixed Platforms.Build.0 = Release_UK|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Release_UK|Win32.ActiveCfg = Release_UK|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Release_UK|Win32.Build.0 = Release_UK|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Release_UK|x86.ActiveCfg = Release_UK|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Release|Any CPU.ActiveCfg = Release|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Release|Win32.ActiveCfg = Release|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Release|Win32.Build.0 = Release|Win32
+		{34CB218F-46DA-42E1-BCE0-99B5B0CAC94E}.Release|x86.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

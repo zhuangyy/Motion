@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4799C73-DEE9-48F2-B626-32149CC30976}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Motion</AssemblyName>
+    <AssemblyOriginatorKeyFile>Motion.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Motion</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignManifests>false</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release_UK|AnyCPU' ">
+    <OutputPath>..\bin\Release_UK\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release_UK|x86' ">
+    <OutputPath>bin\x86\Release_UK\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=1.3.0.0, Culture=neutral, PublicKeyToken=75f8e82c5042a70f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=1.5.1.0, Culture=neutral, PublicKeyToken=38eb47741dd0492e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=1.5.0.0, Culture=neutral, PublicKeyToken=e12ceb15b47eb5cc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=1.5.0.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=1.5.1.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.VFW, Version=1.3.0.0, Culture=neutral, PublicKeyToken=a82f807c999637c8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\AForge.Video.VFW.dll</HintPath>
+    </Reference>
+    <Reference Include="DevAge.Core, Version=4.9.2709.30301, Culture=neutral, PublicKeyToken=faad465d84242dbf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\DevAge.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevAge.Windows.Forms, Version=4.9.2709.30447, Culture=neutral, PublicKeyToken=faad465d84242dbf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\DevAge.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\Microsoft.DirectX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\Microsoft.DirectX.AudioVideoPlayback.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Configuration\ZForge.Configuration.csproj">
+      <Project>{70009C5E-8CA4-4421-BBD2-4683989764D2}</Project>
+      <Name>ZForge.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Controls.CollapsibleSplitter\ZForge.Controls.CollapsibleSplitter.csproj">
+      <Project>{9429F689-EAF5-4E5F-9A53-CD3F48E746A7}</Project>
+      <Name>ZForge.Controls.CollapsibleSplitter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Controls.HeaderPanel\ZForge.Controls.HeaderPanel.csproj">
+      <Project>{8B2B303E-6986-4BA1-950D-09810A7A1A63}</Project>
+      <Name>ZForge.Controls.HeaderPanel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Controls.Logs\ZForge.Controls.Logs.csproj">
+      <Project>{996D0F8A-C1BE-4A69-9C3B-56E19E8D38D3}</Project>
+      <Name>ZForge.Controls.Logs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Controls.PropertyGridEx\ZForge.Controls.PropertyGridEx.csproj">
+      <Project>{6A8118DD-0C34-4353-8F86-0A7A4B6ADE09}</Project>
+      <Name>ZForge.Controls.PropertyGridEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Controls.RSS\ZForge.Controls.RSS.csproj">
+      <Project>{885792A3-A056-42C6-8847-F104C12238A4}</Project>
+      <Name>ZForge.Controls.RSS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Controls.XPTable\ZForge.Controls.XPTable.csproj">
+      <Project>{1ADD2ECB-2B24-4162-8965-3EFAA9BB041E}</Project>
+      <Name>ZForge.Controls.XPTable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Forms\ZForge.Forms.csproj">
+      <Project>{625C7D65-488E-46EF-B01B-9629743FC45D}</Project>
+      <Name>ZForge.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Globalization\ZForge.Globalization.csproj">
+      <Project>{DBBBAD4A-05CA-402D-8E50-534312189DF0}</Project>
+      <Name>ZForge.Globalization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.NET\ZForge.Win32\ZForge.Win32.csproj">
+      <Project>{DB874B12-9B5B-4C28-9235-9E61EC163C0C}</Project>
+      <Name>ZForge.Win32</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZForge.SA\ZForge.SA.Komponent\ZForge.SA.Komponent.csproj">
+      <Project>{D6B9CC2B-A8D2-4C64-9DDC-73D6D7299CB6}</Project>
+      <Name>ZForge.SA.Komponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.Controls.CameraBoard\ZForge.Motion.Controls.CameraBoard.csproj">
+      <Project>{B46EB15F-7992-4025-B25A-8C8CDA1290E2}</Project>
+      <Name>ZForge.Motion.Controls.CameraBoard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.Controls.CameraTree\ZForge.Motion.Controls.CameraTree.csproj">
+      <Project>{14AFA8DB-3ECA-4E51-90B8-297C2E4BB965}</Project>
+      <Name>ZForge.Motion.Controls.CameraTree</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.Controls.CameraView\ZForge.Motion.Controls.CameraView.csproj">
+      <Project>{204F1030-C416-4628-8938-3E5381AEC3AF}</Project>
+      <Name>ZForge.Motion.Controls.CameraView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.Controls\ZForge.Motion.Controls.csproj">
+      <Project>{C9DCB560-4BF3-4328-8BAF-91765B0DCB8A}</Project>
+      <Name>ZForge.Motion.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.Core\ZForge.Motion.Core.csproj">
+      <Project>{05107692-5AAE-4FA1-B542-C8162CB66233}</Project>
+      <Name>ZForge.Motion.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.Forms\ZForge.Motion.Forms.csproj">
+      <Project>{185845FD-3B7A-457D-AAC3-7AC51C0562B5}</Project>
+      <Name>ZForge.Motion.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.PlugIns\ZForge.Motion.PlugIns.csproj">
+      <Project>{47AA85EA-FB8D-4EA6-9219-08C0F80CAD9D}</Project>
+      <Name>ZForge.Motion.PlugIns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.Komponent\ZForge.Motion.Komponent.csproj">
+      <Project>{0BD937B2-9C44-4EF9-BD8F-72D481291760}</Project>
+      <Name>ZForge.Motion.Komponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZForge.Motion.Util\ZForge.Motion.Util.csproj">
+      <Project>{B7EF7162-F6CA-4C1C-8612-94DBDACFF0D7}</Project>
+      <Name>ZForge.Motion.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MotionMainKomponent.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\1.gif" />
+    <EmbeddedResource Include="Resources\2.gif" />
+    <EmbeddedResource Include="Resources\3.gif" />
+    <EmbeddedResource Include="Resources\4.gif" />
+    <EmbeddedResource Include="Resources\5.gif" />
+    <EmbeddedResource Include="Resources\6.gif" />
+    <EmbeddedResource Include="Resources\7.gif" />
+    <EmbeddedResource Include="Resources\8.gif" />
+    <EmbeddedResource Include="Resources\9.gif" />
+    <Content Include="App.ico" />
+    <None Include="Lang\English.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\del_32.png" />
+    <None Include="Resources\videocamera_48.png" />
+    <None Include="Resources\movie_24.png" />
+    <None Include="Resources\house_24.png" />
+    <None Include="Resources\house_16.png" />
+    <None Include="Resources\heart_preferences_24.png" />
+    <None Include="Resources\component_view_24.png" />
+    <None Include="Resources\component_view_16.png" />
+    <None Include="Resources\photo_scenery_24.png" />
+    <None Include="Resources\photo_scenery.png" />
+    <None Include="Resources\window_new.png" />
+    <None Include="Resources\heart_preferences.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\ok.png" />
+    <None Include="Resources\movie.png" />
+    <None Include="Motion.snk" />
+    <None Include="Resources\palette2.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\videocamera.png" />
+    <None Include="Motion.exe.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
